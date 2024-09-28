@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "type": "radiography",
+    "analysis_reason": "Routine Checkups"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "type": "radiography",
+    "analysis_reason": "Guiding Treatment Plans"
+  },
+  {
+    "id": 3,
+    "user_id": 2,
+    "type": "usg",
+    "analysis_reason": "Assessing Blood Flow"
+  },
+  {
+    "id": 4,
+    "user_id": 2,
+    "type": "usg",
+    "analysis_reason": "Guiding Treatment Decisions"
+  },
+  {
+    "id": 5,
+    "user_id": 2,
+    "type": "urine_analysis",
+    "analysis_reason": "Assessing Organ Function"
+  },
+  {
+    "id": 6,
+    "user_id": 2,
+    "type": "ENZYMES",
+    "analysis_reason": "Assessing Liver Function"
+  },
+  {
+    "id": 7,
+    "user_id": 2,
+    "type": "urine_analysis",
+    "analysis_reason": "Assessing Kidney Function"
+  },
+  {
+    "id": 8,
+    "user_id": 2,
+    "type": "blood_analysis",
+    "analysis_reason": "Monitoring Health"
+  }
+]

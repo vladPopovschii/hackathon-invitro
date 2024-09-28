@@ -1,6 +1,6 @@
 import { Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { SignInDto, SignInResponse } from './auth.dto';
+import { SignInDto, SignInResponse, SignUpDto } from '../core/dto/auth.dto';
 import { ApiResponse } from '@nestjs/swagger';
 
 @Controller('auth')
@@ -11,8 +11,13 @@ export class AuthController {
   @HttpCode(HttpStatus.OK)
   @ApiResponse({ type: SignInResponse })
   signIn(@Body() signInDto: SignInDto): Promise<SignInResponse> {
-    console.log('cuc');
-
     return this.authService.signIn(signInDto.email, signInDto.password);
+  }
+
+  @Post('sign-up')
+  @HttpCode(HttpStatus.OK)
+  @ApiResponse({ type: SignInResponse })
+  signUp(@Body() signUpDto: SignUpDto): Promise<SignInResponse> {
+    return this.authService.signUp(signUpDto);
   }
 }
